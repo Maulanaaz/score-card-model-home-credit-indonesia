@@ -46,6 +46,20 @@ The final model : XGBoost achieved robust performance on the validation dataset:
 
 > **Insight:** An AUC score of **0.76** indicates that the model has a strong capability to distinguish between "Good" and "Bad" borrowers, exceeding the baseline for reliable predictive modeling in this context.
 
+## 🧠 Model Interpretability: What Drives Default Risk?
+Understanding **why** the model predicts a high risk is crucial for business adoption. Using XGBoost's Feature Importance, i identified the top factors influencing a client's repayment ability.
+
+![Feature Importance Plot](images/final-feature-importances.png)
+*(Top 20 Most Important Features)*
+
+### 💡 Key Business Insights
+Based on the model insights, the following strategies are proposed to optimize the lending process and reduce default rates:
+
+* Prioritize Higher Education in Product Offerings Leverage the lower risk profile of educated applicants by offering incentives such as simplified requirements, lower interest rates, or higher credit limits for those with verified higher education backgrounds.
+* Implement Geography-Based Risk Pricing Adopt a dynamic pricing strategy that utilizes regional risk rankings of the applicant's residence as a primary factor in determining interest rates and credit limits.
+* Strengthen Verification for Fixed Income Earners Enhance verification protocols and documentation requirements specifically for applicants with the "Working" income type. Ensuring the stability and validity of this income source is a critical signal for loan quality.
+* Automate Hard Filters Based on Internal Behavior Deploy automated "hard filters" to immediately reject or strictly limit loans for applicants who exceed specific thresholds for internal late payments or have a history of prior application rejections.
+* Optimize External Credit Bureau Data Usage Ensure real-time integration of external risk scores (EXT_SOURCE) and credit bureau history. These external signals should carry significant weight in the final scoring model to provide a robust historical baseline for risk assessment.
 
 ## 📂 File Structure
 ```text
@@ -54,9 +68,7 @@ The final model : XGBoost achieved robust performance on the validation dataset:
 │   ├── 2.0-data-cleaning-and-feature-engineering.ipynb
 │   ├── 3.0-feature-selection.ipynb
     └── 4.0-training-and-model-selection.ipynb
-  
 ├── images/                # Charts and visualizations
-    ├── final-feature-importances.png    
-├── src/                   # Source code for preprocessing
+    ├── final-feature-importances.png
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
