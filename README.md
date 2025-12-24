@@ -32,11 +32,12 @@ The dataset consists of **7 heterogeneous tables** encompassing customer behavio
 2.  **Data Preprocessing:** Handling outliers, imputing missing values, and encoding categorical variables (One-Hot & Label Encoding).
 3.  **Feature Engineering:** Creating domain-specific features (e.g., `debt_to_income_ratio`, `credit_utilization`).
 4.  **Feature Selection:** Removing high-collinearity features to optimize model performance.
-5.  **Modeling:** Implementing **XGBoost Classifier** due to its efficiency with tabular data and handling of imbalanced datasets.
+5.  **Modeling:** Training models (Logistic Regression, Random Forest, XGBoost, LightGBM) and evaluation.
 6.  **Evaluation:** Using **AUC-ROC (Area Under the Receiver Operating Characteristic Curve)** as the primary metric.
+7.  **Model Selection** Choosing XGBoost as the final modal due to its performance.
 
 ## 📈 Key Results
-The final XGBoost model achieved robust performance on the validation dataset:
+The final model : XGBoost achieved robust performance on the validation dataset:
 
 | Metric | Score |
 | :--- | :--- |
