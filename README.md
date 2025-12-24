@@ -7,7 +7,7 @@
 ## 📌 Project Overview
 **Credit Scoring** is a statistical analysis used by lenders and financial institutions to assess a person's creditworthiness. This project aims to solve a classic classification problem: **predicting whether a loan applicant will be able to repay their loan or will encounter difficulties (default).**
 
-This project was developed as part of the **Project-Based Virtual Internship at Home Credit Indonesia x Rakamin Academy**.
+This project was developed as part of the **Project-Based Virtual Internship : Data Scientist at Home Credit Indonesia x Rakamin Academy**.
 
 ## 💼 Business Understanding
 * **Problem:** Non-Performing Loans (NPL) or defaults significantly impact the company's profitability and liquidity.
