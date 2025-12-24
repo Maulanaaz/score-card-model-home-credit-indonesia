@@ -72,3 +72,7 @@ Based on the model insights, the following strategies are proposed to optimize t
     ├── final-feature-importances.png
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
+
+## 📬 Contact
+Created by **Maulana Zulfikar Aziz**
+Connect with me on [LinkedIn](https://www.linkedin.com/in/maulanaaz)
