@@ -28,8 +28,8 @@ The dataset consists of **7 heterogeneous tables** encompassing customer behavio
 * Generated **100+ predictive features** to capture financial stability patterns.
 
 ## 🛠️ Methodology
-1.  **Data Preprocessing:** Handling outliers, imputing missing values, and encoding categorical variables (One-Hot & Label Encoding).
-2.  **Exploratory Data Analysis (EDA):** Analyzing correlation between features and the target variable (Default Risk).
+1.  **Exploratory Data Analysis (EDA):** Showing the imbalanced targets and default risk based on external score.
+2.  **Data Preprocessing:** Handling outliers, imputing missing values, and encoding categorical variables (One-Hot & Label Encoding).
 3.  **Feature Engineering:** Creating domain-specific features (e.g., `debt_to_income_ratio`, `credit_utilization`).
 4.  **Feature Selection:** Removing high-collinearity features to optimize model performance.
 5.  **Modeling:** Implementing **XGBoost Classifier** due to its efficiency with tabular data and handling of imbalanced datasets.
@@ -41,20 +41,21 @@ The final XGBoost model achieved robust performance on the validation dataset:
 | Metric | Score |
 | :--- | :--- |
 | **AUC-ROC** | **0.7601** |
-| **Training Accuracy** | 0.85 (Approx) |
+| **Training Accuracy** | **0.7120** |
 
 > **Insight:** An AUC score of **0.76** indicates that the model has a strong capability to distinguish between "Good" and "Bad" borrowers, exceeding the baseline for reliable predictive modeling in this context.
 
-*(Place your ROC Curve image here: `![ROC Curve](images/roc_curve.png)`)*
 
 ## 📂 File Structure
 ```text
-├── data/                  # Sample data (excluded from git)
 ├── notebooks/             # Jupyter Notebooks for analysis
-│   ├── 1.0-data-cleaning.ipynb
-│   ├── 2.0-eda-feature-engineering.ipynb
-│   └── 3.0-modeling-xgboost.ipynb
+│   ├── 1.0-import-libraries-and-eda.ipynb
+│   ├── 2.0-data-cleaning-and-feature-engineering.ipynb
+│   ├── 3.0-feature-selection.ipynb
+    └── 4.0-training-and-model-selection.ipynb
+  
 ├── images/                # Charts and visualizations
+    ├── final-feature-importances.png    
 ├── src/                   # Source code for preprocessing
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
